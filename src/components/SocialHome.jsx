@@ -11,8 +11,8 @@ const SocialHome = ({access_token}) => {
   const exchangeCodeForTokens = async (code) => {
     const client_id = "558135012588-2vd3rau8mocs5ss6l6unsc301rchqa0v.apps.googleusercontent.com";
     const client_secret = "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";  
-    const redirect_uri = "http://localhost:5173"; 
-    // const redirect_uri = "https://dcmeeting.bestinbd.com"; 
+    // const redirect_uri = "http://localhost:5173"; 
+    const redirect_uri = "https://dcmeeting.bestinbd.com"; 
 
     const params = new URLSearchParams();
     params.append('client_id', client_id);
