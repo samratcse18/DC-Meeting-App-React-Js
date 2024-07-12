@@ -47,7 +47,7 @@ const Social = () => {
       
     }
   };
-  console.log(accessToken);
+
   useEffect(() => {
     const login = async () => {
       try {
