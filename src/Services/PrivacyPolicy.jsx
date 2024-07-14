@@ -4,7 +4,7 @@ import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 const PrivacyPolicy = () => {
     return (
         <Container>
-            <Row className='mx-5 my-2'>
+            <Row className='mx-lg-5 my-lg-2'>
                 <Col>
                 <div>
                     <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Privacy Policy</strong></p>
