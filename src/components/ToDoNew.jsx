@@ -55,6 +55,13 @@ const ToDoNew = (props) => {
     setEditingText('');
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      handleAddTask();
+    }
+  };
+
   props.getToDo(tasks);
 
   return (
@@ -66,6 +73,7 @@ const ToDoNew = (props) => {
                     placeholder="Add Meeting To-Do"
                     value={newTask}
                     onChange={(e) => setNewTask(e.target.value)}
+                    onKeyPress={handleKeyPress}
                     style={EventInputBorder2}
                 />
                 <Button variant="success" style={{ color: 'white' }} onClick={handleAddTask}>

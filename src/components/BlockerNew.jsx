@@ -56,6 +56,13 @@ const BlockerNew = (props) => {
     setEditingText('');
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      handleAddblocker();
+    }
+  };
+
   props.getBlocker(blockers);
 
   return (
@@ -67,6 +74,7 @@ const BlockerNew = (props) => {
                     placeholder="Add Meeting To-Do"
                     value={newblocker}
                     onChange={(e) => setNewblocker(e.target.value)}
+                    onKeyPress={handleKeyPress}
                     style={EventInputBorder2}
                 />
                 <Button variant="success" style={{ color: 'white' }} onClick={handleAddblocker}>
