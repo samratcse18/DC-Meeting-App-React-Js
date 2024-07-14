@@ -1,156 +1,96 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 
 const PrivacyPolicy = () => {
     return (
-        <Container style={{marginTop:'20px',marginBottom:'20px'}}>
-            <Row>
+        <Container>
+            <Row className='mx-5 my-2'>
                 <Col>
-                    <h1 style={{ fontSize: '24px',marginBottom:'20px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>DC Meeting App Privacy Policy</strong>
-                    </h1>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Introduction</strong>
-                    </h2>
-                    <p>
-                        This Privacy Policy describes how DC Meeting App ("we," "us," or "our") collects,
-                        uses, and discloses your information in connection with your use of our website,
-                        DC Meeting App (the "Website").
+                <div>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Privacy Policy</strong></p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        This Privacy Policy outlines our practices and guidelines for collecting, using, and disclosing your information when you use our Service. It also informs you about your privacy rights and how the law safeguards your data.
                     </p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Information We Collect</strong>
-                    </h2>
-                    <ul>
-                        <li>
-                            <strong>User Accounts:</strong> When you sign in using Google Sign-In, we collect
-                            your name, email address, and profile picture (if available) from Google. We do not
-                            store your Google password.
-                        </li>
-                        <li>
-                            <strong>Meeting Information:</strong> When you create a meeting, we collect
-                            information about the meeting, such as title, date, time, and attendees' email
-                            addresses.
-                        </li>
-                    </ul>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>How We Use Your Information</strong>
-                    </h2>
-                    <ul>
-                        <li>
-                            <strong>User Accounts:</strong> We use your account information to identify you
-                            when you use the Website and to provide you with access to certain features.
-                        </li>
-                        <li>
-                            <strong>Meeting Information:</strong> We use meeting information to facilitate the
-                            creation and management of meetings, including adding them to participants' Google
-                            calendars with their permission.
-                        </li>
-                    </ul>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Information Sharing and Disclosure</strong>
-                    </h2>
-                    <ul>
-                        <li>
-                            <strong>Google Sign-In:</strong> We use Google Sign-In to authenticate users. We
-                            adhere to Google's API Terms of Service and Privacy Policy regarding their data
-                            practices. You can find more information about
-                            <a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer"> Google's Privacy Policy</a> here.
-                        </li>
-                        <li>
-                            <strong>Google Calendar API:</strong> We use the Google Calendar API to add meetings to participants' calendars only with their permission. We access calendars for the specific purpose of adding the meeting and do not store any calendar data. You can find more information about Google's API Terms of Service and Privacy Policy
-                            <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer"> here</a>.
-                        </li>
-                    </ul>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Data Retention</strong>
-                    </h2>
-                    <p>
-                        We will retain your information for as long as your account is active or as needed to provide you with services. We will also retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        We use your personal information to deliver and enhance our Service. By utilizing the Service, you consent to the collection and use of your information as detailed in this Privacy Policy.
                     </p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Your Choices</strong>
-                    </h2>
-                    <ul>
-                        <li>
-                            You can access and update your account information at any time by signing in to your Google account.
-                        </li>
-                        <li>
-                            You can withdraw your permission for us to access your Google Calendar at any time by managing your Google account settings.
-                        </li>
-                    </ul>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Security</strong>
-                    </h2>
-                    <p>
-                        We take reasonable steps to protect your information from unauthorized access, disclosure, alteration, or destruction. However, no internet transmission or electronic storage is ever completely secure.
+                </div>
+
+                <p style={{ fontSize: '20px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Definitions and Interpretations</strong></p>
+                <ListGroup as="ul">
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        In this privacy and policy the following terms shall carry the following meanings:
                     </p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Changes to this Privacy Policy</strong>
-                    </h2>
-                    <p>
-                        We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on the Website.
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        <strong>Website & application:</strong> The website refers to the website known as DC Meeting App and application refers to the application known as ‘DC Meeting App’ that you are currently using. Your data is only internally used in our company.
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        <strong>Data:</strong> ‘Data’ refers to all the collective information that you provide to us by the means of the website & application.
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        <strong>Personal information:</strong> Any information regarding an identified individual or identifiable individual
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        <strong>Service:</strong> refer to the features, and functions that we provide to you through our website and application. These include any features or functionalities that allow you to interact with our platform and achieve the intended purposes of our application.
+                    </ListGroup.Item>
+                </ListGroup>
+
+                <p style={{ fontSize: '20px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Types of data collected</strong></p>
+                <ListGroup as="ul">
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        Email address
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        We allow you to create an account using normal sign up and google sign up and login using normal sign in or our services with a third-party social media service known as Google. We may collect your information associated with your Normal sign in email or Google account such as your email address.
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        Event information which includes event title, event dates and times, Agenda, Meeting link, Participants or attendees email addresses.
+                    </ListGroup.Item>
+                </ListGroup>
+
+                <p style={{ fontSize: '20px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Use of your personal data</strong></p>
+                <ListGroup as="ul">
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        We shall use your personal data for the following purposes:
                     </p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Contact Us</strong>
-                    </h2>
-                    <p>
-                        If you have any questions about this Privacy Policy, please contact us at{' '}
-                        <strong>info@bestinbd.com</strong>.
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        To manage your registration using Normal sign up or Google Sign up as a user of our service.
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        To provide you access to your event information outside of our website and application on third-party social media services known as Google Calendar.
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        Google Calendar uses only View and edit events on all your calendars.
+                    </ListGroup.Item>
+                </ListGroup>
+                <div>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Retention of your personal data</strong></p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        Your Personal Data will be kept by the Company for internal usage, only for the duration required to achieve the goals mentioned in this Privacy Policy. Additionally, we may retain and use your data to meet legal obligations, resolve conflicts, and enforce our legal agreements.
                     </p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h2 style={{ fontSize: '16px', fontFamily: 'Times New Roman, serif' }}>
-                        <strong>Additional Considerations</strong>
-                    </h2>
-                    <ul>
-                        <li>
-                            It's important to consult with a lawyer to ensure your policy is compliant with all applicable laws and regulations, especially if you collect data from users in specific regions.
-                        </li>
-                        <li>
-                            You may want to add a section about cookies and other tracking technologies used on your website, if applicable.
-                        </li>
-                        <li>
-                            Consider including a section about children's privacy if your website is intended for or likely to be used by children.
-                        </li>
-                    </ul>
+                </div>
+                <div>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Security of your personal data</strong></p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        The security of your personal data is important to Us. We maintain reasonable physical, electronic and procedural safeguards to protect your information. When we collect data through the Site, we collect your personal details on a secure server. Once your information is in our possession, we adhere to our security guidelines to protect it against unauthorized access. However, by using the website and application, the users accept the inherent security implications of data transmission over the internet and the World Wide Web which cannot always be guaranteed as completely secure, and therefore, there would always remain certain inherent risks regarding use of the Platform. Users are responsible for ensuring the protection of Email address records for their account.
+                    </p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        Our service may contain links that may redirect you to other websites which are not operated by us. We urge you to review the privacy policies of those websites.
+                    </p>
+                </div>
+                <div>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Changes to this privacy policy</strong></p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        We may change our privacy policies from time to time. The changes shall be reflected on this page and you will be deemed to have accepted the terms of the Privacy Policy on your first use of the website & application following the alterations. It is strongly recommended to check this page often to ensure you are up-to date with the current privacy policies.
+                    </p>
+                </div>
+                <div>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Contacting us</strong></p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        If you have any questions about our Site or this Privacy Policy, please contact us by email at <span style={{color:'blue'}}>tarun@dcastalia.com</span>, or by post at Dcastalia Limited; house 91, Road 4, Block B, Banani, Dhaka. Please ensure that your query is clear, particularly if it is a request for information about the data we hold about you.
+                    </p>
+                </div>
+                
                 </Col>
             </Row>
         </Container>
