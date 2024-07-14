@@ -60,13 +60,25 @@ const PrivacyPolicy = () => {
                         To provide you access to your event information outside of our website and application on third-party social media services known as Google Calendar.
                     </ListGroup.Item>
                     <ListGroup.Item as="li" style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
-                        Google Calendar uses only View and edit events on all your calendars.
+                        Google Calendar uses only View and edit events Which are created from our website to your calendar.
                     </ListGroup.Item>
                 </ListGroup>
                 <div>
-                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Retention of your personal data</strong></p>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Retention of Your Personal Data</strong></p>
                     <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
                         Your Personal Data will be kept by the Company for internal usage, only for the duration required to achieve the goals mentioned in this Privacy Policy. Additionally, we may retain and use your data to meet legal obligations, resolve conflicts, and enforce our legal agreements.
+                    </p>
+                </div>
+                <div>
+                    <p style={{ fontSize: '24px', fontFamily: '"Times New Roman", serif' }} className="mt-4"><strong>Delete Your Personal Data</strong></p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.
+                    </p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        Our Service may give You the ability to delete certain information about You from within the Service.
+                    </p>
+                    <p style={{ fontSize: '16px', fontFamily: '"Times New Roman", serif' }}>
+                        You may update or delete Your information at any time by signing in to Your Account. If you would like us to remove your information from our records, please create a request from your email ("Subject: Deletion Request") to <span style={{color:'blue'}}>tarun@dcastalia.com</span>. Once your request is received, we follow an internal deletion process to make sure that your data is safely removed in the next seven (7) working days. You'll be contacted for verification and your account will be deleted after successful verification.
                     </p>
                 </div>
                 <div>
