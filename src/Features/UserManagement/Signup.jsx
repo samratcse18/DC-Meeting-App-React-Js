@@ -7,6 +7,7 @@ import Social from '../../components/Social';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { baseUrl } from '../../Constant/Constant';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Signup = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://meetingapp.bestinbd.com/auth/register', {
+            const response = await fetch(`${baseUrl}auth/register`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'

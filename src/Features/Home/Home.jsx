@@ -7,6 +7,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { RotatingLines } from 'react-loader-spinner';
 import H1 from '../../components/H1';
 import PlusIcon from '../../components/PlusIcon';
+import { baseUrl } from '../../Constant/Constant';
 
 const Home = () => {
 
@@ -58,7 +59,7 @@ const Home = () => {
     useEffect(() => {
     const fetchData = async () => {
     try {
-            const response = await fetch(`https://meetingapp.bestinbd.com/meeting/get-meetings-by-type/${eventType}`, {
+            const response = await fetch(`${baseUrl}meeting/get-meetings-by-type/${eventType}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

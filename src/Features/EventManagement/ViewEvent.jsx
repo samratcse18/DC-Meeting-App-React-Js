@@ -17,6 +17,7 @@ import comment from '../../assets/image/comment.png';
 import block from '../../assets/image/block.png';
 import { ResponsiveUpdateEvent } from '../../StyledComponents/Styled.style';
 import Blocker from '../../components/Blocker';
+import { baseUrl } from '../../Constant/Constant';
 
 
 function parseAndFormatDate(dateString) {
@@ -63,7 +64,7 @@ const ViewEvent = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://meetingapp.bestinbd.com/meeting/get-meetings-by-type/all',{
+                const response = await fetch(`${baseUrl}meeting/get-meetings-by-type/all`,{
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

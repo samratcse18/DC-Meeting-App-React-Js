@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { userInfo } from '../Store/Reducers/userReducer';
 import { useDispatch } from 'react-redux';
+import { baseUrl } from '../Constant/Constant';
 
 const Social = () => {
 
@@ -52,7 +53,7 @@ const Social = () => {
   useEffect(() => {
     const login = async () => {
       try {
-        const response = await fetch('https://meetingapp.bestinbd.com/auth/social-auth', {
+        const response = await fetch(`${baseUrl}auth/social-auth`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

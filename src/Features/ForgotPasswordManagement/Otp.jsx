@@ -5,6 +5,7 @@ import H1 from '../../components/H1';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import CustomLink from '../../components/CustomLink';
 import { toast } from 'react-toastify';
+import { baseUrl } from '../../Constant/Constant';
 
 const Otp = () => {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ const Otp = () => {
     const Otp = otp.join('');
 
     try {
-        const response = await fetch('https://meetingapp.bestinbd.com/auth/verify-otp', {
+        const response = await fetch(`${baseUrl}auth/verify-otp`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

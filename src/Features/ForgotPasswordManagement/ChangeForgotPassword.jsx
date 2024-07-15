@@ -5,6 +5,7 @@ import H1 from '../../components/H1';
 import CustomLink from '../../components/CustomLink';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { baseUrl } from '../../Constant/Constant';
 
 const ChangeForgotPassword = () => {
     const navigate = useNavigate();
@@ -47,7 +48,7 @@ const ChangeForgotPassword = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://meetingapp.bestinbd.com/auth/reset-password', {
+            const response = await fetch(`${baseUrl}auth/reset-password`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'

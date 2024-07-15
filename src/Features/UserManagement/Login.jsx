@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { userInfo } from '../../Store/Reducers/userReducer';
+import { baseUrl } from '../../Constant/Constant';
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ const Login = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://meetingapp.bestinbd.com/auth/login', {
+            const response = await fetch(`${baseUrl}auth/login`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

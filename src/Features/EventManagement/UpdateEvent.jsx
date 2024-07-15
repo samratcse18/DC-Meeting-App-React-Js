@@ -25,6 +25,7 @@ import { useNavigate } from 'react-router-dom';
 import ToDoNew from '../../components/ToDoNew';
 import { toast } from 'react-toastify';
 import BlockerNew from '../../components/BlockerNew';
+import { baseUrl } from '../../Constant/Constant';
 
 
 function parseAndFormatDate(dateString) {
@@ -57,7 +58,7 @@ const UpdateEvent = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://meetingapp.bestinbd.com/meeting/get-meetings-by-type/all',{
+                const response = await fetch(`${baseUrl}meeting/get-meetings-by-type/all`,{
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -213,7 +214,7 @@ const UpdateEvent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`https://meetingapp.bestinbd.com/meeting/edit-meeting-by-user/${id}`, {
+            const response = await fetch(`${baseUrl}meeting/edit-meeting-by-user/${id}`, {
               method: 'PUT',
               headers: {
                 'Content-Type': 'application/json',

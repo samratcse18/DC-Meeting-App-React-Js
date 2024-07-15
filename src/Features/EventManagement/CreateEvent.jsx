@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import SocialHome from '../../components/SocialHome';
+import { baseUrl } from '../../Constant/Constant';
 
 const CreateEvent = () => {
 
@@ -113,7 +114,7 @@ const CreateEvent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://meetingapp.bestinbd.com/meeting/create-meeting', {
+            const response = await fetch(`${baseUrl}meeting/create-meeting`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
